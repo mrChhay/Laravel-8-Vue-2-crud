@@ -70,7 +70,7 @@
 
             deletePost(id) {
                 this.axios
-                    .delete(`dmin:admin-api/customer/delete/${id}`)
+                    .delete(`admin-api/delete/${id}`)
                     .then(response => {
                         let i = this.customer.map(item => item.id).indexOf(id); // find index of your object
                         this.customer.splice(i, 1)

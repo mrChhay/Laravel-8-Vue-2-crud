@@ -5403,7 +5403,7 @@ __webpack_require__.r(__webpack_exports__);
     deletePost: function deletePost(id) {
       var _this2 = this;
 
-      this.axios["delete"]("dmin:admin-api/customer/delete/".concat(id)).then(function (response) {
+      this.axios["delete"]("admin-api/delete/".concat(id)).then(function (response) {
         var i = _this2.customer.map(function (item) {
           return item.id;
         }).indexOf(id); // find index of your object
